@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   root 'post#index'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  get 'post/index'
-  get 'post/create'
+  get '/post/index' => 'post#index'
+  post '/post/create' => 'post#create'
   
  
   # Example of regular route:

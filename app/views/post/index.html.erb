@@ -1,12 +1,12 @@
-<form action='/home/create' method='post'>
+<form action='/post/create' method='post'>
     <textarea name='title'></textarea>
     <textarea name='content'></textarea>
     <input type='submit' value='제출'>
 </form>
 <%@posts.each do |x|%>
-    _____________________________________________
+    _____________________________________________<br>
     제목: <%=x.title%><br>
     내용: <%=x.content%><br>
-    _____________________________________________
+
 <%end%>
     
